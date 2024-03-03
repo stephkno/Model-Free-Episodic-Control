@@ -6,8 +6,8 @@ import gym
 import numpy
 import gym_snake_game
 
-import EpisodicController
-import ReplayMemory
+from episodic_controller import EpisodicController
+from replay_memory import ReplayMemory
 
 options = {
     'fps': 25,
@@ -26,9 +26,10 @@ options = {
 }
 
 env_name = "Snake-v0"
+state_dim = 6
 
 env = gym_snake_game.make(env_name, render_mode="human", **options)
-controller = EpisodicController(env_name, env.observation_space, env.action_space)
+controller = EpisodicController(env_name, state_dim, env.action_space)
 epoch = 0
 
 max_return = 0

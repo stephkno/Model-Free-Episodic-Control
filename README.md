@@ -2,7 +2,7 @@
 
 ## Description
 
-This is an implementation of Google DeepMind's algorithm *Model Free Episodic Control*, a reinforcement learning algorithm. The algorithm is a gradient-free method to estimate Q-values of an environment by storing all of the observed states and using k-nearest neighbors to search and return a top-k mean of the accumulated reward values. This method is more sample efficient than traditional DQN technique at learning _. For snake, an environment with a relatively small state space, the unprocessed observations are sufficent. For environments with larger state spaces, a dimensionality reduction technique, such as random projection, must be used.
+This is an implementation of Google DeepMind's algorithm *Model Free Episodic Control*[1], a reinforcement learning algorithm. The algorithm is a gradient-free method to estimate Q-values of an environment by storing all of the observed states and using k-nearest neighbors to search and return a top-k mean of the accumulated reward values. This method is more sample efficient than traditional DQN technique at learning _. For snake, an environment with a relatively small state space, the unprocessed observations are sufficent. For environments with larger state spaces, a dimensionality reduction technique, such as random projection, must be used.
 
 The project has three main components:
 - Replay memory is used to store each state transition and calculate discounted rewards for each episode. 
@@ -27,3 +27,6 @@ To evaluate training weights
 ```
 mfec/bin/python evaluate_snake.py
 ```
+---
+## References
+[1] Blundell, C. (2016, June 14). [Model Free Episodic Control](https://arxiv.org/abs/1606.04460). arXiv preprint arXiv:1606.04460.

@@ -13,6 +13,15 @@ The project has three main components:
 - The Episodic Controller is the brain of the algorithm which stores and sorts the states/reward matrix.
 - Train/evaluate for each environment type.
 
+## Dependencies
+```
+gym[atari]==0.26.2
+gym_snake_game==0.1.2
+numpy==1.24.3
+torch==2.2.1
+tensorboard==2.16.2
+```
+
 ## Getting Started
 
 Clone the repo
@@ -38,6 +47,7 @@ To evaluate training
 ```
 mfec/bin/python evaluate_snake.py
 ```
+
 ---
 ## References
 [1] Blundell, C. (2016, June 14). [Model Free Episodic Control](https://arxiv.org/abs/1606.04460). arXiv preprint arXiv:1606.04460.

@@ -12,16 +12,18 @@ The project has three main components:
 ## Getting Started
 
 Clone the repo
-`git clone https://github.com/stephkno/Model-Free-Episodic-Control.git
+```
+git clone https://github.com/stephkno/Model-Free-Episodic-Control.git
 python -m venv mfec
-mfec/bin/pip -r requirements.txt`
+mfec/bin/pip -r requirements.txt
+```
 
 To train
-`
+```
 mfec/bin/python train_snake.py
-`
+```
 
 To evaluate training weights
-`
+```
 mfec/bin/python evaluate_snake.py
-`
+```

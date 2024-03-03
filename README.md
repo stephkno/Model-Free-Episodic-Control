@@ -27,7 +27,8 @@ Install dependencies
 ```
 mfec/bin/pip -r requirements.txt
 ```
----
+
+## Usage
 To train
 ```
 mfec/bin/python train_snake.py
